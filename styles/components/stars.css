@@ -1,0 +1,56 @@
+.rate {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  color: #F6A326;
+}
+
+.rate input {
+  display: none;
+}
+
+.rate > label {
+  float: right;
+}
+
+.rate > label::before {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 4px;
+  margin: 0;
+  cursor: pointer;
+  font-family: stars;
+  content: "\e904";
+}
+
+.rate .half::before {
+  position: absolute;
+  width: 10px;
+  overflow: hidden;
+  display: inline-block;
+  padding-right: 0;
+  content: "";
+}
+
+.rate:hover label::before {
+  content: "\e904";
+}
+
+.rate:hover .half::before {
+  content: "\e904";
+}
+
+input:checked + .half::before,
+.rate.rate .half:hover::before {
+  content: "\e905";
+}
+
+label:hover ~ input:checked ~ label::before {
+  content: "\e906";
+}
+
+input:checked ~ label::before,
+.rate.rate label:hover::before,
+.rate label:hover ~ label::before {
+  content: "\e906";
+}

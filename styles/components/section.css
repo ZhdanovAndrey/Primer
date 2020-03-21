@@ -1,0 +1,79 @@
+.section {
+  padding: 25px 0;
+}
+
+.section-title {
+  margin: 20px 0;
+  font-size: 52px;
+  line-height: 64px;
+  text-align: center;
+  font-weight: 900;
+  color: #061E33;
+}
+
+.section-description {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #464649;
+}
+
+.section-search .grid-item {
+  margin-top: 10px;
+}
+
+.section-reviews {
+  background: #F2F7FF;
+}
+
+.section-popular-tours {
+  background: #F2F7FF;
+}
+
+@media (min-width: 960px) {
+  .section-search {
+    background-image: url(../../images/bg_2.jpg);
+  }
+
+  .section-daily-tours {
+    background-image: url(../../images/mountains2-min.jpg);
+  }
+
+  .section.section-daily-tours,
+  .section.section-search {
+    padding-bottom: 550px;
+    background-origin: padding-box;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .section {
+    padding: 50px;
+  }
+
+  .section-title {
+    margin-top: 0px;
+    margin-bottom: 45px;
+  }
+
+  .section-who .section-description {
+    text-align: left;
+    line-height: 25px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  
+  .section {
+    padding: 90px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .section-daily-tours,
+  .section-search {
+    background-size: 100% 60%;
+  }
+}

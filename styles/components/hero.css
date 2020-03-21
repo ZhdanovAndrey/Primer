@@ -1,0 +1,57 @@
+.hero {
+  background-image: url(../../images/bg_1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  background-attachment: fixed;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 56px
+}
+
+.hero-subtitle {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 90px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-shadow: none;
+  }
+
+  .hero-subtitle-container {
+    margin: 0 auto;
+    width: 550px;
+  }
+
+  .section.hero {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero-title {
+    font-size: 90px;
+  }
+
+  .hero-subtitle-container {
+    margin: 0 auto;
+    width: 643px;
+  }
+
+  .section.hero {
+    padding: 189px 0;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+  }
+}
